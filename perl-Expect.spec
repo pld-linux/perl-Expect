@@ -3,7 +3,7 @@ Summary:	Expect perl module
 Summary(pl):	Modu³ perla Expect
 Name:		perl-Expect
 Version:	1.11
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
