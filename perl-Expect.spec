@@ -14,8 +14,6 @@ BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-IO-Stty
 BuildRequires:	perl-IO-Tty
-%requires_eq	perl
-Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
