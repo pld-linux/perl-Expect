@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	Expect perl module
 Summary(pl):	Modu³ perla Expect
 Name:		perl-Expect
@@ -9,16 +9,19 @@ Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module//Expect.pm-%{version}.tar.gz
 Patch:		perl-Expect-paths.patch
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl-IO-Stty
+BuildRequires:	perl-IO-Tty
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
-Expect perl module
+Expect perl module.
 
 %description -l pl
-Modu³ perla Expect
+Modu³ perla Expect.
 
 %prep
 %setup -q -n Expect.pm-%{version}
