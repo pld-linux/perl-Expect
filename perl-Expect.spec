@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Expect
-%define	pnam	Expect
+%define		pdir	Expect
+%define		pnam	Expect
 Summary:	Expect - Expect for Perl
 Summary(pl):	Expect - Expect dla Perla
 Name:		perl-Expect
