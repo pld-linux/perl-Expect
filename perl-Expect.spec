@@ -2,8 +2,8 @@
 Summary:	Expect perl module
 Summary(pl):	Modu³ perla Expect
 Name:		perl-Expect
-Version:	1.11
-Release:	3
+Version:	1.12
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf Changes README FAQ.old
+gzip -9nf Changes README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
