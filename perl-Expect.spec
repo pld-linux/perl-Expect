@@ -20,14 +20,14 @@ Summary(uk):	Модуль для Perl Expect
 Summary(zh_CN):	Expect Perl дё©И
 Name:		perl-Expect
 Version:	1.15
-Release:	2
+Release:	3
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-IO-Tty
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,7 +45,8 @@ pseudoterminala).
 %patch -p1
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -59,5 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README tutorial
-%{perl_sitelib}/Expect.pm
+%{perl_vendorlib}/Expect.pm
 %{_mandir}/man3/*
