@@ -20,7 +20,7 @@ Summary(uk):	Модуль для Perl Expect
 Summary(zh_CN):	Expect Perl дё©И
 Name:		perl-Expect
 Version:	1.15
-Release:	2
+Release:	3
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
