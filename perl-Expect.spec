@@ -10,7 +10,7 @@ Summary(fr):	Module Perl Expect
 Summary(it):	Modulo di Perl Expect
 Summary(ja):	Expect Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Expect ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Expect
+Summary(nb):	Perlmodul Expect
 Summary(pl):	Modu³ perla Expect
 Summary(pt_BR):	Módulo Perl Expect
 Summary(pt):	Módulo de Perl Expect
