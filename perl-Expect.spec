@@ -2,8 +2,8 @@
 Summary:	Expect perl module
 Summary(pl):	Modu³ perla Expect
 Name:		perl-Expect
-Version:	1.12
-Release:	3
+Version:	1.15
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/Expect/Expect-%{version}.tar.gz
@@ -43,4 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz tutorial
 %{perl_sitelib}/Expect.pm
+%{perl_sitelib}/Expect.pod
 %{_mandir}/man3/*
