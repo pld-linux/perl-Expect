@@ -2,13 +2,13 @@
 Summary:	Expect perl module
 Summary(pl):	Modu³ perla Expect
 Name:		perl-Expect
-Version:	1.07
-Release:	4
+Version:	1.10
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module//Expect.pm-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Expect/Expect-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
@@ -25,7 +25,7 @@ Expect perl module.
 Modu³ perla Expect.
 
 %prep
-%setup -q -n Expect.pm-%{version}
+%setup -q -n Expect-%{version}
 %patch -p1
 
 %build
@@ -37,7 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf Changes README FAQ
+gzip -9nf Changes README FAQ.old
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -46,5 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz tutorial
 %{perl_sitelib}/Expect.pm
-%{perl_sitelib}/term-filter.pl
 %{_mandir}/man3/*
