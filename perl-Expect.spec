@@ -1,12 +1,29 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	Expect perl module
+%define		pdir	Expect
+%define		pnam	Expect
+Summary:	Expect Perl module
+Summary(cs):	Modul Expect pro Perl
+Summary(da):	Perlmodul Expect
+Summary(de):	Expect Perl Modul
+Summary(es):	Módulo de Perl Expect
+Summary(fr):	Module Perl Expect
+Summary(it):	Modulo di Perl Expect
+Summary(ja):	Expect Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Expect ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul Expect
 Summary(pl):	Modu³ perla Expect
+Summary(pt_BR):	Módulo Perl Expect
+Summary(pt):	Módulo de Perl Expect
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Expect
+Summary(sv):	Expect Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Expect
+Summary(zh_CN):	Expect Perl Ä£¿é
 Name:		perl-Expect
 Version:	1.15
 Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/Expect/Expect-%{version}.tar.gz
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-IO-Tty
@@ -24,7 +41,7 @@ nie jest ju¿ wymagany, ale zalecany (potrzebny do zmiany trybu
 pseudoterminala).
 
 %prep
-%setup -q -n Expect-%{version}
+%setup -q -n %{pnam}-%{version}
 %patch -p1
 
 %build
