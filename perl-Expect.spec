@@ -3,7 +3,7 @@ Summary:	Expect perl module
 Summary(pl):	Modu³ perla Expect
 Name:		perl-Expect
 Version:	1.11
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -14,6 +14,7 @@ BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-IO-Stty
 BuildRequires:	perl-IO-Tty
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
