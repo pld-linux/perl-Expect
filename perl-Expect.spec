@@ -1,27 +1,13 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Expect
 %define		pnam	Expect
-Summary:	Expect Perl module
-Summary(cs):	Modul Expect pro Perl
-Summary(da):	Perlmodul Expect
-Summary(de):	Expect Perl Modul
-Summary(es):	Módulo de Perl Expect
-Summary(fr):	Module Perl Expect
-Summary(it):	Modulo di Perl Expect
-Summary(ja):	Expect Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Expect ÆÞ ¸ðÁÙ
-Summary(nb):	Perlmodul Expect
-Summary(pl):	Modu³ perla Expect
-Summary(pt_BR):	Módulo Perl Expect
-Summary(pt):	Módulo de Perl Expect
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Expect
-Summary(sv):	Expect Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Expect
-Summary(zh_CN):	Expect Perl Ä£¿é
+Summary:	Expect - Expect for Perl
+Summary(pl):	Expect - Expect dla Perla
 Name:		perl-Expect
 Version:	1.15
 Release:	3
-License:	Artistic or GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 # Source0-md5:	e717952b79c740121c18a1958b1bd6bb
@@ -33,13 +19,18 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Expect Perl module - expect for Perl. In this version perl-IO-Stty
-module is not required, but recommended (needed to change pty mode).
+The Expect Perl module is a successor of Comm.pl and a descendent of
+Chat.pl.  It more closely resembles the Tcl Expect language than its
+predecessors.  It does not contain any of the networking code found in
+Comm.pl.  I suspect this would be obsolete anyway given the advent of
+IO::Socket and external tools such as netcat.
 
 %description -l pl
-Modu³ Perla Expect - expect dla Perla. W tej wersji modu³ perl-IO-Stty
-nie jest ju¿ wymagany, ale zalecany (potrzebny do zmiany trybu
-pseudoterminala).
+Modu³ Perla Expect jest nastêpc± Comm.pl i potomkiem Chat.pl. Bardziej
+przypomina on jêzyk Tcl Expect ni¿ jego poprzednicy. Nie zawiera kodu
+sieciowego, który by³ obecny w Comm.pl. Prawdopodobnie powinien byæ
+uznany za przestarza³y wraz z ukazaniem siê IO::Socket i zewnêtrznych
+narzêdzi, takich jak netcat.
 
 %prep
 %setup -q -n %{pnam}-%{version}
