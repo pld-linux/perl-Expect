@@ -3,7 +3,7 @@ Summary:	Expect perl module
 Summary(pl):	Modu³ perla Expect
 Name:		perl-Expect
 Version:	1.12
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Expect/Expect-%{version}.tar.gz
