@@ -46,9 +46,3 @@
  #	Here we set manual_stty on the process so we can do things like
  #hit ^Z to stop it instead of the ^Z going to the process on the other machine.
  #	This is to say, normally when you interact with a process STDIN is
---- Expect.pm-1.07/term-filter.pl~	Sat May 31 00:12:08 1997
-+++ Expect.pm-1.07/term-filter.pl	Fri Oct  8 00:37:59 1999
-@@ -1,2 +1,2 @@
--#!/usr/local/bin/perl
-+#!/usr/bin/perl
- while (<>) { s/\033\[.*?[a-zA-Z]//g; print; }
