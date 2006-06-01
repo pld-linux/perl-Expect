@@ -8,16 +8,16 @@
 Summary:	Expect - Expect for Perl
 Summary(pl):	Expect - Expect dla Perla
 Name:		perl-Expect
-Version:	1.15
+Version:	1.17
 Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
-# Source0-md5:	e717952b79c740121c18a1958b1bd6bb
+# Source0-md5:	081c253a1ca20ad693a3665c68fcdc33
 Patch0:		%{name}-paths.patch
 BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	perl-IO-Tty
+BuildRequires:	perl-IO-Tty >= 1.03
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
