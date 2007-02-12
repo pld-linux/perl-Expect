@@ -6,7 +6,7 @@
 %define		pdir	Expect
 %define		pnam	Expect
 Summary:	Expect - Expect for Perl
-Summary(pl):	Expect - Expect dla Perla
+Summary(pl.UTF-8):   Expect - Expect dla Perla
 Name:		perl-Expect
 Version:	1.17
 Release:	4
@@ -29,12 +29,12 @@ predecessors.  It does not contain any of the networking code found in
 Comm.pl.  I suspect this would be obsolete anyway given the advent of
 IO::Socket and external tools such as netcat.
 
-%description -l pl
-Modu³ Perla Expect jest nastêpc± Comm.pl i potomkiem Chat.pl. Bardziej
-przypomina on jêzyk Tcl Expect ni¿ jego poprzednicy. Nie zawiera kodu
-sieciowego, który by³ obecny w Comm.pl. Prawdopodobnie powinien byæ
-uznany za przestarza³y wraz z ukazaniem siê IO::Socket i zewnêtrznych
-narzêdzi, takich jak netcat.
+%description -l pl.UTF-8
+ModuÅ‚ Perla Expect jest nastÄ™pcÄ… Comm.pl i potomkiem Chat.pl. Bardziej
+przypomina on jÄ™zyk Tcl Expect niÅ¼ jego poprzednicy. Nie zawiera kodu
+sieciowego, ktÃ³ry byÅ‚ obecny w Comm.pl. Prawdopodobnie powinien byÄ‡
+uznany za przestarzaÅ‚y wraz z ukazaniem siÄ™ IO::Socket i zewnÄ™trznych
+narzÄ™dzi, takich jak netcat.
 
 %prep
 %setup -q -n %{pnam}-%{version}
