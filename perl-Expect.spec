@@ -6,7 +6,7 @@
 %define		pdir	Expect
 %define		pnam	Expect
 Summary:	Expect - Expect for Perl
-Summary(pl.UTF-8):   Expect - Expect dla Perla
+Summary(pl.UTF-8):	Expect - Expect dla Perla
 Name:		perl-Expect
 Version:	1.17
 Release:	4
