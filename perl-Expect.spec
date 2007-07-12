@@ -8,13 +8,13 @@
 Summary:	Expect - Expect for Perl
 Summary(pl.UTF-8):	Expect - Expect dla Perla
 Name:		perl-Expect
-Version:	1.17
-Release:	4
+Version:	1.20
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
-# Source0-md5:	081c253a1ca20ad693a3665c68fcdc33
+# Source0-md5:	9134ae3778285bcf8c3ffdba1a177886
 Patch0:		%{name}-paths.patch
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-IO-Tty >= 1.03
@@ -53,6 +53,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{perl_vendorlib}/Expect
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -60,4 +62,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README tutorial
 %{perl_vendorlib}/Expect.pm
+%{perl_vendorlib}/Expect
 %{_mandir}/man3/*
