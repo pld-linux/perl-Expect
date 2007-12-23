@@ -8,13 +8,13 @@
 Summary:	Expect - Expect for Perl
 Summary(pl.UTF-8):	Expect - Expect dla Perla
 Name:		perl-Expect
-Version:	1.20
-Release:	2
+Version:	1.21
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
-# Source0-md5:	9134ae3778285bcf8c3ffdba1a177886
+# Source0-md5:	a151b0dc4d1a35c73941c65b7c26da5b
 Patch0:		%{name}-paths.patch
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-IO-Tty >= 1.03
