@@ -13,11 +13,12 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Expect/%{pnam}-%{version}.tar.gz
 # Source0-md5:	a151b0dc4d1a35c73941c65b7c26da5b
 Patch0:		%{name}-paths.patch
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Expect/
 BuildRequires:	perl-IO-Tty >= 1.03
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
